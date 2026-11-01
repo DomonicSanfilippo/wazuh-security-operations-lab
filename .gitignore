@@ -1,0 +1,31 @@
+# Secrets and Wazuh credentials
+client.keys
+authd.pass
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+.env
+.env.*
+
+# Machine, VM, and bulk data
+*.qcow2
+*.iso
+*.utm
+VMs/
+ISOs/
+backups/
+archives/
+
+# Potentially sensitive evidence and exports
+raw-evidence/
+screenshots/unredacted/
+dashboard-exports/
+logs/
+*.ndjson
+*.pcap
+*.pcapng
+
+# OS files
+.DS_Store
