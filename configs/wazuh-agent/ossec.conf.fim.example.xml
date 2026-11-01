@@ -1,0 +1,13 @@
+<!--
+  Sanitized learning example for a laboratory Wazuh agent.
+  Replace the placeholder with a test-only directory you own.
+  Do not copy credentials, keys, live paths, or manager settings from a production system.
+-->
+<ossec_config>
+  <syscheck>
+    <disabled>no</disabled>
+    <frequency>43200</frequency>
+    <scan_on_start>yes</scan_on_start>
+    <directories check_all="yes" realtime="yes">/path/to/lab-test-directory</directories>
+  </syscheck>
+</ossec_config>
