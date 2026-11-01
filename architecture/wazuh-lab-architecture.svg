@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">Sanitized Wazuh security operations lab architecture</title>
+  <desc id="desc">A Mac mini host runs two Ubuntu virtual machines. The Wazuh server provides Manager, Indexer, Dashboard, and Filebeat. An Ubuntu endpoint and a macOS endpoint send telemetry to the Wazuh server.</desc>
+  <style>
+    .bg { fill:#f8fafc; } .host { fill:#e2e8f0; stroke:#475569; stroke-width:3; }
+    .server { fill:#dbeafe; stroke:#2563eb; stroke-width:3; } .endpoint { fill:#dcfce7; stroke:#16a34a; stroke-width:3; }
+    .label { font-family:Arial,sans-serif; fill:#0f172a; font-size:24px; font-weight:700; }
+    .sub { font-family:Arial,sans-serif; fill:#334155; font-size:18px; }
+    .line { stroke:#475569; stroke-width:4; fill:none; marker-end:url(#arrow); }
+    .note { font-family:Arial,sans-serif; fill:#475569; font-size:16px; }
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker></defs>
+  <rect class="bg" width="1200" height="650"/>
+  <text x="600" y="46" text-anchor="middle" class="label">Wazuh Security Operations Lab</text>
+  <text x="600" y="75" text-anchor="middle" class="note">Sanitized architecture - internal addresses and identifiers omitted</text>
+  <rect x="65" y="120" width="1070" height="420" rx="18" class="host"/>
+  <text x="95" y="158" class="label">Mac mini host - UTM virtualization</text>
+  <rect x="135" y="220" width="350" height="215" rx="15" class="server"/>
+  <text x="310" y="262" text-anchor="middle" class="label">Ubuntu Wazuh Server</text>
+  <text x="310" y="305" text-anchor="middle" class="sub">Wazuh Manager</text>
+  <text x="310" y="335" text-anchor="middle" class="sub">Wazuh Indexer</text>
+  <text x="310" y="365" text-anchor="middle" class="sub">Wazuh Dashboard and Filebeat</text>
+  <rect x="710" y="220" width="340" height="100" rx="15" class="endpoint"/>
+  <text x="880" y="260" text-anchor="middle" class="label">Ubuntu endpoint</text>
+  <text x="880" y="292" text-anchor="middle" class="sub">SSH/PAM and FIM telemetry</text>
+  <rect x="710" y="380" width="340" height="100" rx="15" class="endpoint"/>
+  <text x="880" y="420" text-anchor="middle" class="label">macOS endpoint</text>
+  <text x="880" y="452" text-anchor="middle" class="sub">Agent enrolled and active</text>
+  <path d="M710 270 C640 270,580 290,485 310" class="line"/>
+  <path d="M710 430 C640 430,580 390,485 350" class="line"/>
+  <text x="600" y="580" text-anchor="middle" class="note">Implemented baseline: central monitoring, endpoint enrollment, selected authentication telemetry, and file-integrity monitoring.</text>
+  <text x="600" y="610" text-anchor="middle" class="note">Not shown: high availability, automated response, honeypot, network IDS, or production integrations.</text>
+</svg>
