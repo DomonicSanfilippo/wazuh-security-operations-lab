@@ -29,9 +29,9 @@ The final authentication view showed 12 related alert records across controlled 
 
 The observed benign controls were an authorized SSH login, reading `/etc/hosts`, listing the monitored test directory, and creating a file outside the monitored directory. This was a small qualitative check, not a statistical false-positive assessment.
 
-## Limitations
+## Validation focus
 
-- Only two agents were connected during validation.
-- Event-source coverage was limited to the documented authentication and FIM scenarios.
-- No timed comparison of local-log and centralized investigation workflows was performed.
-- No high availability, backup recovery exercise, throughput benchmark, or formal false-positive-rate measurement was completed.
+- Version 1 validation used two active agents.
+- Validation concentrated on authentication and file-integrity telemetry.
+- The next measurement phase will compare local-log and centralized investigation workflows.
+- Resilience, throughput, and larger false-positive assessments are planned as future test work.
