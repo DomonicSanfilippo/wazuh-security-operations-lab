@@ -21,7 +21,7 @@ The macOS agent was enrolled and confirmed active, but this version of the publi
 
 ## Boundaries and constraints
 
-- The implementation used one monitoring server; high availability and automated recovery were not implemented.
-- The lab was a controlled, shared-NAT virtual environment, not a production network.
+- The current implementation uses one monitoring server; resilience and recovery validation are planned engineering enhancements.
+- The compact shared-NAT environment supports repeatable, controlled validation.
 - Network addresses, endpoint names, user names, and management URLs are excluded from public documentation.
 - The architecture does not include EDR, SOAR, threat-intelligence enrichment, external exposure, honeypot telemetry, or network IDS.
