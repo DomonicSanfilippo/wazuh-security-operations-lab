@@ -1,6 +1,6 @@
 # Wazuh Security Operations Lab
 
-> **Status: implemented and validated laboratory proof of concept.** This repository documents a self-hosted Wazuh security-monitoring lab completed as a graduate capstone. It is not an enterprise deployment and does not represent production SOC experience.
+> **Status: implemented and validated security-monitoring lab.** This graduate capstone documents a self-hosted Wazuh deployment with centralized telemetry, controlled detection validation, and incident investigation.
 
 ## Overview
 
@@ -19,7 +19,7 @@ The project demonstrates the engineering lifecycle of a small security-monitorin
 | Benign controls | Four controlled activities completed; no incorrect authentication-failure or FIM alerts attributed to them during observed test windows |
 | Investigation | A file-deletion alert was reviewed and classified as authorized laboratory activity |
 
-The results above apply only to the documented laboratory conditions. No response-time reduction, false-positive rate, enterprise coverage, or production reliability claim is made.
+Results reflect the documented laboratory conditions. Future versions will add broader telemetry, custom detections, and repeatable measurement.
 
 ## Architecture
 
@@ -52,15 +52,15 @@ See the [validation record](docs/validation.md), [safe test procedures](docs/tes
 └── SECURITY.md              # Publication and secret-safety checklist
 ```
 
-## Lab versus production
+## Current scope and engineering path
 
-| Implemented in this lab | Not demonstrated or not claimed |
+| Demonstrated in Version 1 | Next engineering milestone |
 | --- | --- |
-| Wazuh deployment and agent enrollment | Enterprise-scale SIEM administration |
-| Authentication and file-integrity telemetry | High availability or disaster recovery |
-| Controlled detection validation | Automated containment or response |
-| Alert review and classification | 24/7 SOC operations or managed-security service delivery |
-| Documented maintenance practices | Full threat-detection coverage or performance benchmarks |
+| Wazuh deployment and agent enrollment | Expand telemetry coverage and endpoint scale |
+| Authentication and file-integrity telemetry | Add custom detections and tuning workflow |
+| Controlled detection validation | Add repeatable positive and negative test cases |
+| Alert review and classification | Add investigation enrichment and reporting automation |
+| Documented maintenance practices | Design resilience, backup, and recovery validation |
 
 ## Safe reproduction
 
